@@ -57,5 +57,16 @@ namespace Aop
 
             return proxy as T;
         }
+
+        //public static T Create(T target)
+        //{
+        //    // Create a new instance of the LoggingProxy<T> class
+        //    var proxy = Create<T, LoggingProxy<T>>() as LoggingProxy<T>;
+
+        //    // Set the target object that the proxy will intercept method calls for
+        //    proxy._target = target;
+
+        //    return proxy as T;
+        //}
     }
 }
