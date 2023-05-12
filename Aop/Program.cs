@@ -15,7 +15,7 @@ namespace Aop
             builder.Services.AddScoped(p => {
                 IBlogService blogService = new BlogService();
 
-                return LogProxy<IBlogService>.SetProxy(blogService);
+                return LoggingProxy<IBlogService>.Create(blogService);
             });
            var app = builder.Build();
 
