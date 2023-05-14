@@ -7,7 +7,7 @@
 
         public bool AddBlog(BlogModel blogModel)
         {
-            Console.WriteLine("add blog :"+ blogModel.Id + blogModel.PostTitle);
+            Console.WriteLine("add blog");
             return true;
         }
 

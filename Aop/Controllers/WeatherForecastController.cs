@@ -15,10 +15,10 @@ namespace Aop.Controllers
 
 
 
-        [HttpGet("GetWeatherForecast")]
+        [HttpGet()]
         public IActionResult Get()
         {
-            _blogService.AddBlog(new BlogModel() { Id=1,PostBody="ffs",PostTitle="gdgd"});
+            _blogService.AddBlog(new BlogModel() { Id=1,PostBody= "PostBody", PostTitle= "PostTitle" });
             return Ok("ok");
         }
     }
